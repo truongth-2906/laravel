@@ -1,0 +1,376 @@
+#sidebar {
+    max-width: 280px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-right: 1px solid #EAECF0;
+    width: 280px;
+    padding: 0 16px;
+    font-size: 16px;
+    color: #344054;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    height: 100%;
+
+    .icon-dashboard {
+        margin: 32px 8px 15px;
+
+        img {
+            width: 142px;
+            height: 14.61px;
+        }
+    }
+
+    .menu-sidebar > div {
+        display: flex;
+        align-items: center;
+        white-space: pre;
+
+        div.icon {
+            margin: 11px 15px;
+            width: 20px;
+            height: 20px;
+        }
+
+        div.icon.icon-home {
+            background: url("/img/backend/sidebar/home.svg");
+            height: 22px;
+        }
+
+        div.icon.icon-freelancer {
+            background: url("/img/backend/sidebar/freelancer.svg");
+            height: 21px;
+        }
+
+        div.icon.icon-employer {
+            background: url("/img/backend/sidebar/employer.svg");
+            height: 23px;
+            width: 22px;
+        }
+
+        div.icon.icon-job {
+            background: url("/img/backend/sidebar/job.svg");
+            height: 23px;
+            width: 22px;
+        }
+
+        div.icon.icon-search {
+            background: url("/img/icon-search.svg");
+            height: 23px;
+            width: 22px;
+        }
+
+        div.icon.icon-message {
+            background: url("/img/icon-message.svg");
+            height: 23px;
+            width: 22px;
+        }
+
+        div.icon.icon-support {
+            background: url("/img/backend/sidebar/support.svg");
+            height: 22px;
+            width: 22px;
+        }
+
+        div.icon.icon-setting {
+            background: url("/img/backend/sidebar/setting.svg");
+            height: 22px;
+            width: 22px;
+        }
+
+        div.icon.icon-voucher {
+            background: url("/img/backend/sidebar/voucher.svg");
+            height: 22px;
+            width: 22px;
+        }
+
+        a {
+            color: #344054;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        div.icon-heart {
+            background: url("/img/icon-heart.svg");
+            width: 20px;
+            height: 18px;
+        }
+
+        div.icon.icon-notification {
+            background: url("/img/icon-notification.svg");
+        }
+
+        .number-unread {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 2px 8px;
+            min-width: 22px;
+            height: 22px;
+            background: #E5E4FF;
+            mix-blend-mode: multiply;
+            border-radius: 16px;
+            font-weight: 500;
+            font-size: 12px;
+            text-align: center;
+            color: #2200A5;
+            margin: auto 12px;
+        }
+    }
+
+    .menu-sidebar > div.active {
+        background: #F0F0FF;
+        border-radius: 6px;
+        font-weight: 600;
+        color: #2200A5;
+
+        a {
+            color: #2200A5;
+        }
+
+        div.icon.icon-home {
+            background: url("/img/backend/sidebar/home_active.svg");
+        }
+
+        div.icon.icon-freelancer {
+            background: url("/img/backend/sidebar/freelancer_active.svg");
+        }
+
+        div.icon.icon-employer {
+            background: url("/img/backend/sidebar/employer_active.svg");
+        }
+
+        div.icon.icon-job {
+            background: url("/img/backend/sidebar/job_active.svg");
+        }
+
+        div.icon.icon-support {
+            background: url("/img/backend/sidebar/support_active.svg");
+        }
+
+        div.icon.icon-setting {
+            background: url("/img/backend/sidebar/setting_active.svg");
+        }
+
+        div.icon.icon-search {
+            background: url("/img/icon-search.svg");
+        }
+
+        div.icon.icon-message {
+            background: url("/img/icon-message.svg");
+        }
+    }
+
+    .menu-sidebar-bottom {
+        margin-bottom: 24px;
+    }
+
+    .menu-sidebar > div:hover {
+        background: #F0F0FF;
+        border-radius: 6px;
+    }
+
+    .name-and-mail-sidebar div:last-child {
+        color: #475467;
+    }
+
+    .group-user-info {
+        margin-bottom: 32px;
+        padding-top: 24px;
+        border-top: 1px solid #000000;
+
+        .icon-avatar-img {
+            min-width: 40px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: yellow;
+            overflow: hidden;
+            margin-right: 12px;
+
+            img {
+                width: 40px;
+                height: auto;
+            }
+        }
+
+        .name-and-mail-sidebar div {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 170px;
+            font-size: 14px;
+        }
+    }
+
+    .btn-logout {
+        border: none;
+        background: none;
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+#sidebar.close {
+    width: 0;
+    padding: 0;
+}
+
+#sidebar-mobile {
+    display: none;
+}
+
+.body-content {
+    margin-left: 280px;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+
+    .c-body {
+        flex-grow: 1;
+    }
+}
+
+.body-content.hidden-sidebar {
+    margin-left: 0px;
+}
+
+#header-content {
+    padding: 32px;
+    text-transform: uppercase;
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    color: #2200A5;
+    justify-content: space-between;
+
+    .logout {
+        width: 120px;
+        height: 40px;
+        background: #EEF2F6;
+        border: 1px solid #E3E8EF;
+        box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 17px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2200A5;
+    }
+}
+
+#body-content {
+    padding: 0 32px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 766px) {
+    .pc-device {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #sidebar {
+        width: 0;
+        padding: 0;
+        z-index: 9999;
+    }
+
+    .body-content {
+        margin-left: 0;
+    }
+
+    .c-app {
+        flex-direction: column;
+    }
+
+    #sidebar-mobile {
+        display: flex;
+        height: 64px;
+        border-bottom: 1px solid #EAECF0;
+        padding: 0 12px 0 16px;
+        align-items: center;
+        justify-content: space-between;
+
+        .icon-dashboard {
+            height: fit-content;
+
+            img {
+                width: 142px;
+                height: 14.61px;
+            }
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            gap: 8px;
+            width: 40px;
+            height: 40px;
+            background: #FFFFFF;
+            border: none;
+        }
+    }
+
+    #header-content {
+        padding-left: 16px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+
+        .logout {
+            display: none;
+        }
+    }
+
+    #body-content {
+        padding: 0 16px;
+    }
+}
+
+.text-color-content {
+    color: #000000;
+}
+
+.content-dashboard {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-general-action {
+    height: 40px;
+    background: #EEF2F6;
+    border: 1px solid #E3E8EF;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 17px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

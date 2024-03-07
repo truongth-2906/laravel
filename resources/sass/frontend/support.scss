@@ -1,0 +1,55 @@
+.modal-support {
+    .modal-dialog {
+        max-width: 768px;
+
+        .modal-content {
+            border-radius: unset;
+
+            .modal-header {
+                border-bottom: none;
+
+                .btn-close {
+                    right: 3%;
+                    top: -1%;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+
+    .btn {
+        height: 40px;
+        border: 1px solid #e3e8ef;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 17px;
+        min-width: 80px;
+    }
+
+    .modal-support {
+        input {
+            border: 1px solid #d0d5dd;
+            box-shadow: 0 1px 2px rgb(16 24 40 / 5%);
+            border-radius: 8px;
+            height: 44px;
+            padding-left: 10px;
+        }
+
+        textarea {
+            border: 1px solid #d0d5dd;
+            box-shadow: 0 1px 2px rgb(16 24 40 / 5%);
+            border-radius: 8px;
+            padding: 10px 0 0 10px;
+            font-size: 16px;
+        }
+
+        .btn-send-support{
+            border: 3px solid #c2e830;
+        }
+    }
+
+}

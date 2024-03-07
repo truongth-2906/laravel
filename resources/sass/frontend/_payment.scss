@@ -1,0 +1,106 @@
+.escrow-account {
+    &__avatar {
+        display: inline-block;
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 1.9rem;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        vertical-align: middle;
+        color: #fff;
+        background-color: #08f;
+    }
+
+    &__info {
+        max-width: calc(100% - 1rem - 30px);
+    }
+
+    &__name,
+    &__email {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
+
+.btn-complete-pay {
+    height: 40px;
+    background: #edfcc4;
+    box-shadow: 0 1px 2px rgb(16 24 40 / 5%);
+    border-radius: 17px;
+}
+
+.btn-complete-pay:hover {
+    background-color: #edfcc4 !important;
+}
+
+.table-transactions-freelancer {
+    .scroll-table {
+        overflow-x: auto;
+    }
+
+    table {
+        width: max-content;
+
+        .column-sm {
+            width: 75px;
+            min-width: 75px;
+        }
+
+        .column-md {
+            width: 170px;
+            min-width: 170px;
+        }
+
+        .column-lg {
+            width: 270px;
+            min-width: 270px;
+        }
+
+        .column-xl {
+            width: 310px;
+            min-width: 310px;
+        }
+    }
+}
+
+.table-transactions-employer {
+    .scroll-table {
+        overflow-x: auto;
+    }
+
+    table {
+        width: max-content;
+
+        .column-sm {
+            width: 75px;
+            min-width: 75px;
+        }
+
+        .column-md {
+            width: 170px;
+            min-width: 170px;
+        }
+
+        .column-lg {
+            width: 270px;
+            min-width: 270px;
+        }
+
+        .column-xl {
+            width: 310px;
+            min-width: 310px;
+        }
+    }
+}
+.btn-complete-pay {
+    &:hover {
+        cursor: default !important;
+    }
+}

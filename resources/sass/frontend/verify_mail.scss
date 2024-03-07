@@ -1,0 +1,33 @@
+.digit-group input {
+    width: 80px;
+    height: 80px;
+    background-color: lighten(#ffffff, 5%);
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 1000;
+    color: #2200A5;
+    margin: 0 2px;
+    border-radius: 18px;
+    border: 2px solid #2200A5;
+}
+
+.prompt {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.verify-email {
+    width: 56px;
+    height: 56px;
+    background: #E5E4FF;
+    border-radius: 28px;
+}
+
+.verified-email {
+    width: 56px;
+    height: 56px;
+    background: #F5FDCA;
+    border-radius: 28px;
+}

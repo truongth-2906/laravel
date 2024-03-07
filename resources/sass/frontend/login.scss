@@ -1,0 +1,191 @@
+.button-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.login-content {
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.login-button {
+    background-color: #C2E830;
+    border: 1px solid #C2E830;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 17px;
+    font-size: 16px !important;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #2200A5;
+}
+
+.login-button:hover {
+    background-color: #F9FAFB;
+    border: 1px solid #C2E830;
+    color: #2200A5;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D0D5DD;
+}
+
+.google {
+    font-size: 16px !important;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.icon-google {
+    width: 25px;
+    height: auto;
+}
+
+.remember {
+    padding: 0;
+    margin-left: 20px;
+}
+
+.forgot {
+    font-size: 14px !important;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #3500FF;
+}
+
+.forgot:hover {
+    text-decoration: none;
+}
+
+.signup {
+    color: #3500FF;
+}
+
+.no-account {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.text-14 {
+    font-size: 14px !important;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+@media only screen and (min-width: 641px) {
+    .mobile {
+        display: none;
+    }
+
+    .login-container {
+        background-image: url("/img/background.svg");
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .w-desktop {
+            max-width: 440px;
+        }
+    }
+
+    .signup {
+        color: #C2E830
+    }
+
+    .signup:hover {
+        color: #90EE90;
+        text-decoration: none;
+    }
+
+    .logo {
+        img {
+            content: url("/img/logo.svg") !important;
+        }
+    }
+
+    .no-account {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .login-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        color: #2200A5;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+    .card {
+        border: none;
+    }
+    .login-container {
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .logo {
+        img {
+            content: url("/img/logo2.svg");
+        }
+    }
+
+    .login-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #2200A5;
+        text-transform: uppercase;
+    }
+}
+
+.height-input-login {
+    height: 44px !important;
+}
+
+.checkbox-login {
+    width: 16px;
+    height: 16px;
+}
+
+.text-remember {
+    line-height: 1.8;
+}
+
+.img-size-login {
+    width: 213px;
+    height: 21.91px;
+}

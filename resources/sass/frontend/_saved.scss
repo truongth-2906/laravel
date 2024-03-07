@@ -1,0 +1,206 @@
+#saved-wrapper {
+
+    .saved-wrapper-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        background: #ffffff;
+        border: 1px solid #eaecf0;
+        box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+            0px 1px 2px rgba(16, 24, 40, 0.06);
+        border-radius: 12px;
+
+        .wrapper-header {
+            padding: 27px;
+            border-bottom: 1px solid #eaecf0;
+
+            .btn {
+                min-width: 133px;
+            }
+
+            .btn:first-child {
+                @media screen and (min-width: 555px) {
+                    margin-right: 100px !important;
+                }
+            }
+        }
+
+        .wrapper-body {
+            .search-wrapper {
+                padding: 12px;
+
+                form {
+                    input {
+                        padding: 10px 14px;
+                        max-width: 400px;
+                        width: 400px;
+                        height: 44px;
+                        background: #ffffff;
+                        border: 1px solid #d0d5dd;
+                        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                        border-radius: 8px;
+                        margin-right: 12px;
+                        background-image: url(/img/search_icon.svg);
+                        background-repeat: no-repeat;
+                        background-position-y: center;
+                        background-position-x: 10px;
+                        padding-left: 35px;
+                    }
+
+                    @media screen and (max-width: 900px) {
+                        width: 100%;
+                        input {
+                            width: auto;
+                            flex-grow: 1;
+                        }
+                    }
+                }
+            }
+
+            .table-wrapper {
+                overflow-x: auto;
+
+                table {
+                    width: 100%;
+
+                    thead {
+                        tr {
+                            border-top: 1px solid #eaecf0;
+                        }
+
+                        th {
+                            padding: 13px 24px;
+                            background: #fcfcfd;
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            border-top: 1px solid #eaecf0;
+
+                            &:nth-child(2n + 2) {
+                                background: #fcfcfd;
+                            }
+
+                            &:last-child {
+                                border-bottom: 1px solid #eaecf0;
+                            }
+
+                            td {
+                                padding: 16px 24px;
+                            }
+                        }
+
+                        .long-text {
+                            max-width: 170px;
+
+                            @media screen and (min-width: 1800px) {
+                                max-width: 240px;
+                            }
+
+                            @media screen and (min-width: 2200px) {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+
+                    &#freelancers-table {
+                        @media screen and (min-width: 1120px) {
+                            .column-sm {
+                                width: 10%;
+                            }
+
+                            .column-md {
+                                width: 25%;
+                            }
+
+                            .column-lg {
+                                width: 55%;
+                            }
+                        }
+
+                        @media screen and (max-width: 1119.9px) {
+                            width: max-content;
+
+                            .column-sm {
+                                width: 134px;
+                            }
+
+                            .column-md {
+                                width: 275px;
+                            }
+
+                            .column-lg {
+                                width: 548px;
+                            }
+                        }
+                    }
+
+                    &#jobs-table {
+                        @media screen and (min-width: 1120px) {
+                            .column-sm {
+                                width: 10%;
+                            }
+
+                            .column-md {
+                                width: 22%;
+                            }
+
+                            .column-lg {
+                                width: 36%;
+                            }
+                        }
+
+                        @media screen and (min-width: 1601px) {
+                            .column-sm {
+                                width: 10%;
+                            }
+
+                            .column-md {
+                                width: 18%;
+                            }
+
+                            .column-lg {
+                                width: 42%;
+                            }
+                        }
+
+                        @media screen and (max-width: 1119.9px) {
+                            width: max-content;
+
+                            .column-sm {
+                                width: 134px;
+                            }
+
+                            .column-md {
+                                width: 275px;
+                            }
+
+                            .column-lg {
+                                width: 548px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pagination-wrapper {
+                padding: 14px 24px;
+            }
+        }
+    }
+
+    .pagination {
+        margin-bottom: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #saved-wrapper {
+        .saved-wrapper-child {
+            border: none;
+            border-radius: unset;
+        }
+    }
+}

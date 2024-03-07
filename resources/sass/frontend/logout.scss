@@ -1,0 +1,156 @@
+.btn-modal-logout {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 17px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #2200A5;
+}
+
+.btn-logout-background {
+    background: #C2E830;
+    border: 1px solid #C2E830;
+}
+
+.btn-cancel-background {
+    background: #EEF2F6;
+    border: 1px solid #E3E8EF;
+}
+
+.logout-modal {
+    padding: 24px;
+    width: 544px;
+    height: 220px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+    border-radius: 12px;
+}
+
+.modal-text-logout {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2200A5;
+}
+
+.modal-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 424px;
+    height: 44px;
+}
+
+.text-show {
+    margin-right: inherit;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.icon-outline {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #E5E4FF;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.modal-content {
+    border-radius: 25px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal-footer {
+    justify-content: end;
+    padding: 0;
+}
+
+.modal-footer > * {
+    margin: 0;
+}
+
+.form-check-label {
+    font-size: 13px;
+}
+
+.btn-group-logout {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 760px) {
+    .pc {
+        text-align: center;
+    }
+
+    .btn-group-logout {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .close-mobile {
+        position: absolute;
+        top: -43px;
+        right: 0;
+    }
+    .title-center-logout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content-center-logout {
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 740px) {
+    .content-center-logout {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .btn-margin-top {
+        margin-top: 8px;
+    }
+}
+
+.modal-center {
+    display: table;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+}
+
+.show-modal-mobile {
+    z-index: 9999;
+}

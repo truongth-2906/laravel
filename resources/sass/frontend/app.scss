@@ -1,0 +1,27 @@
+@import "../global";
+@import "global";
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//app
+@import 'login';
+@import "logout";
+@import "reset_password";
+@import "common";
+@import "../backend/layout-content";
+@import "../backend/common";
+@import "../backend/freelancer";
+@import "verify_mail";
+@import "freelancer";
+@import "company";
+@import "job";
+@import "employer";
+@import "saved";
+@import "notification";
+@import "message";
+@import "payment";
+@import "support";

@@ -1,0 +1,312 @@
+.employer-toggle {
+    .btn-toggle {
+        margin-left: 6rem;
+    }
+
+    .btn-toggle:before {
+        content: "Inactive";
+        left: -6rem;
+        width: 4rem;
+        font-weight: 500;
+    }
+
+    .btn-toggle:after {
+        content: "Active";
+        right: -5.2rem;
+        font-weight: 500;
+    }
+}
+
+.ipt-employer-find-freelancer {
+    border: 1px solid #d0d5dd;
+    box-shadow: 0 1px 2px rgb(16 24 40 / 5%);
+    border-radius: 8px;
+    height: 44px;
+    background-image: url(/img/search_icon.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+    padding-left: 35px;
+}
+
+#employer-filter-freelancer-modal {
+    .modal-dialog {
+        max-width: 400px;
+    }
+
+    .modal-content {
+        border-radius: unset;
+
+        .modal-header {
+            border-bottom: none;
+
+            .btn-close {
+                right: 3%;
+                top: -1%;
+                font-size: 30px;
+            }
+        }
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    .icon-filter {
+        width: 40px;
+        height: 40px;
+        background-color: #f0f0ff;
+        border-radius: 50%;
+    }
+
+    .select2-selection {
+        min-height: 32px;
+        border-radius: 8px;
+        border: 1px solid #d0d5dd;
+        box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    }
+
+    select.form-select {
+        border: 1px solid #d0d5dd;
+        box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+        height: 44px;
+        border-radius: 8px;
+    }
+
+    .center-select2 {
+        color: #000000 !important;
+    }
+
+    .btn {
+        height: 40px;
+        border: 1px solid #e3e8ef;
+        box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 17px;
+        min-width: 80px;
+    }
+
+    .btn.btn-cancel {
+        background-color: #eef2f6;
+    }
+
+    .btn.btn-search {
+        background-color: #c2e830;
+    }
+}
+
+.action-application-area {
+    min-width: 270px;
+}
+
+.description-table {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 330px;
+}
+
+@media (max-width: 1400px) {
+    .description-table {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    .mobile-filter-employer {
+        display: none !important;
+    }
+}
+
+.avatar-detail {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.job-application-freelancer {
+    th {
+        background-color: #f9fafb !important;
+        padding-top: 20px !important;
+    }
+    tbody {
+        td {
+            background-color: #fff !important;
+        }
+    }
+}
+
+.freelancer-apply-area {
+    padding-top: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    border-top: 1px solid #e3e8ef;
+
+    .header-detail-freelancer {
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-detail-freelancer {
+        padding: 0 30px;
+        .bio-freelancer {
+            border: none;
+            resize: none;
+            overflow: hidden;
+        }
+
+        .bio-freelancer:focus {
+            outline: none;
+        }
+
+        .parent-introduction {
+            border-top: 1px solid #e3e8ef;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    .footer-detail-freelancer {
+        border-top: 1px solid #e3e8ef;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .area-approve-and-reject {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+    }
+}
+
+.area-btn-footer-modal {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .group-btn-modal {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 720px) {
+    .area-btn-footer-modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .modal-footer-custom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem !important;
+
+        .btn-cancel {
+            width: 100%;
+        }
+
+        .group-btn-modal {
+            width: 100%;
+            margin-top: 0.5rem;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .freelancer-apply-area {
+        .header-detail-freelancer {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            .area-download-and-view {
+                margin-top: 20px;
+            }
+        }
+
+        .footer-detail-freelancer {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            .area-approve-and-reject {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+            }
+            button {
+                margin: 0 0 20px 0 !important;
+            }
+        }
+    }
+}
+.employer-table-freelancers {
+    .scroll-table {
+        overflow-x: auto;
+
+        table {
+            .freelancer-info {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            @media screen and (max-width: 1435.9px) {
+                width: max-content !important;
+
+                .freelancer-info  {
+                    max-width: calc(
+                        260px - 40px - 0.5rem - 0.25rem - 15px - (0.75rem * 2)
+                    );
+                }
+
+                .column-md {
+                    width: 150px;
+                    min-width: 150px;
+                }
+
+                .column-lg {
+                    width: 260px;
+                    min-width: 260px;
+                }
+
+                .column-xl {
+                    width: 390px;
+                    min-width: 390px;
+                }
+            }
+
+            @media screen and (min-width: 1436px) {
+                width: 100%;
+
+                .freelancer-info {
+                    max-width: calc(100vw * 11 / 100);
+                }
+
+                .column-md {
+                    width: 150px;
+                    min-width: 150px;
+                }
+
+                .column-lg {
+                    width: 23.63%;
+                    min-width: 23.63%;
+                }
+
+                .column-xl {
+                    width: calc(1100px - (150px * 3) - 23.63%);
+                    min-width: calc(1100px - (150px * 3) - 23.63%);
+                }
+            }
+        }
+    }
+}
